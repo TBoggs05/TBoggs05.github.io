@@ -9,15 +9,15 @@
            var fileName = location.href.split("/").slice(-1)[0];
            //branches for loading each page.
            if (button.classList.contains("experienceButton") && fileName != "ExperiencePage.html") {
-               location.href = "../html/portfolioSite-main/html/ExperiencePage.html";
+               location.href = "ExperiencePage.html";
            } else if (button.classList.contains("educationButton")&& fileName != "EducationPage.html") {
-               location.href = "../html/portfolioSite-main/html/EducationPage.html";
+               location.href = "EducationPage.html";
            } else if (button.classList.contains("projectsButton")&& fileName != "ProjectsPage.html") {
-               location.href = "../html/portfolioSite-main/html/ProjectsPage.html";
+               location.href = "ProjectsPage.html";
            } else if (button.classList.contains("resumeButton")&& fileName != "ResumePage.html") {
-               location.href = "../html/ResumePage.html";
+               location.href = "ResumePage.html";
            } else if (button.classList.contains("nameButton")&& fileName != "index.html") {
-               location.href = "../../index.html";
+               location.href = "mePage.html";
            }
        };
    });
