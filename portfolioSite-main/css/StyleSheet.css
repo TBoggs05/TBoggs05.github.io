@@ -101,8 +101,15 @@ margin:1rem;
     max-width:100%;
     height:auto;
 }
-.ContentItem{
-    grid-area: 1/2/2/2;
+.ResumeDiv{
+    display:flex;
+    justify-content: center;
+    height:80rem;
+    width:auto;
+    max-height:100%;
+    max-width:auto;
+    margin-left:auto;
+    margin-right:auto;
 }
 footer{
     text-align:center;
