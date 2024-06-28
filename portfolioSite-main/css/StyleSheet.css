@@ -9,18 +9,21 @@ html{
    -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     overscroll-behavior: none;
-    
+    height:100%;
+ 
 }
 
 html::-webkit-scrollbar{
     display:none;
 }
-body{
-    background-color:rgba(178,34,34,1);
-    background-image:url("../images/background-hexagons.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-blend-mode:lighten;  
+body {
+    margin: 0;
+    height: 100%;
+    background-color:rgb(48, 46, 46);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 @keyframes fadeInAnimation {
     0% {
@@ -39,7 +42,7 @@ body{
 }                 
 
 .gridwrapper{
-    background-image: radial-gradient( circle 817.6px at 10% 20%,  rgba(178,34,34,0.7) 0%, rgba(255,87,51,0.7) 41.9%, rgba(255,165,0,0.7) 100.2% );
+    background-color: rgba(12, 12, 12, 0.5);
     display:flex;
     justify-content: center;
     position:sticky;
@@ -94,7 +97,8 @@ animation-iteration-count: 1;
 animation-fill-mode:forwards;
 background-color:rgba(0,0,0,0.3);
 width:100%;
-margin:1rem;
+margin-bottom:1rem;
+margin-top:1rem;
 }
 .AboutMePhoto{
     grid-area: 1/1/1/1;
@@ -113,8 +117,9 @@ margin:1rem;
 }
 footer{
     text-align:center;
-    background-color:rgba(245, 245, 220, 0.329);
+   /* background-color:rgba(245, 245, 220, 0.329);*/
     margin-top:auto;
+    background-color: rgba(12, 12, 12, 0.5);
 }
 .footerFlex{
     display:flex;
