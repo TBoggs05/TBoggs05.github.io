@@ -3,7 +3,7 @@
 <head>
     <title>Trace's Portfolio!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel = "stylesheet" href = "../css/StyleSheet.css">
+    <link rel = "stylesheet" href = "portfolioSite-main/css/StyleSheet.css">
     <!--font import from google!-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
@@ -31,12 +31,12 @@
 
 <h1>ABOUT ME</h1>
 <div class = "ContentDiv">
-    <div class = "AboutMePhoto"><p><img src = "../images/IMG_1515.jpg" alt = "Selfie" style = "width:25rem;height:25rem;"></p></div>
+    <div class = "AboutMePhoto"><p><img src = "portfolioSite-main/images/IMG_1515.jpg" alt = "Selfie" style = "width:25rem;height:25rem;"></p></div>
     <h3>Hello! Thank you for taking time and interest in my page. My name is Trace Boggs. I'm a computer science and mathematics student from Lawton, Oklahoma. I spend my time learning and making new things, take a look around!</h3>
 </div>
 <br>
 <div class = "ContentDiv">
-  <div class = "AboutMePhoto"><p><img src = "../images/IMG_1515.jpg" alt = "Selfie" style = "width:25rem;height:25rem;"></p></div>
+  <div class = "AboutMePhoto"><p><img src = "portfolioSite-main/images/IMG_1515.jpg" alt = "Selfie" style = "width:25rem;height:25rem;"></p></div>
   <h3>Hello! Thank you for taking time and interest in my page. My name is Trace Boggs. I'm a computer science and mathematics student from Lawton, Oklahoma. I spend my time learning and making new things, take a look around!</h3>
 </div>
 <footer>
@@ -52,33 +52,6 @@
     <div class = "footerItem"><a href="https://itch.io/profile/tpoggs" target = "_blank"><button class = "footerButton">Itch</button></a></div>
   </div>
 </footer>
+<script src = "../javascript/gridButtons.js"></script>
 </body>
-
-<!--script for handling grid buttons-->
-<script type="text/javascript">
-    //queryselectorAll queries document for all attributes w/ passed selector (class gridButton)
-    var buttons = document.querySelectorAll(".gridButton");
-  //javascript is weakly typed so our var is actually containing a list of all buttons...
-  //we loop thu each button in buttons and for each button in buttons we call a function which we pass that button
-   buttons.forEach(function(button) {
-        //when that button is clicked we call this JS function...
-       button.onclick = function() {
-          //check against filename so that we cant just spam load the same page.
-           var fileName = location.href.split("/").slice(-1)[0];
-           //branches for loading each page.
-           if (button.classList.contains("experienceButton") && fileName != "ExperiencePage.html") {
-               location.href = "ExperiencePage.html";
-           } else if (button.classList.contains("educationButton")&& fileName != "EducationPage.html") {
-               location.href = "EducationPage.html";
-           } else if (button.classList.contains("projectsButton")&& fileName != "ProjectsPage.html") {
-               location.href = "ProjectsPage.html";
-           } else if (button.classList.contains("resumeButton")&& fileName != "ResumePage.html") {
-               location.href = "ResumePage.html";
-           } else if (button.classList.contains("nameButton")&& fileName != "index.html") {
-               location.href = "index.html";
-           }
-       };
-   });
-   </script>
-
 </html>
