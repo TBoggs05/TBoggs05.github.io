@@ -140,7 +140,6 @@ footer{
 }
 .footerItem{
     flex: 1 1 0;
-    width: 0;
 }
 .footerButton{
     display:inline-block;
@@ -166,4 +165,4 @@ footer{
     max-width:100%;
     width:50%;
     height:auto;
-}
+} 
