@@ -40,7 +40,12 @@ body {
         transform:scale(1,1);
     }
 }                 
-
+p{
+    font-size:125%;
+}
+h1,h2,h3{
+    font-size:150%;
+}
 .gridwrapper{
     background-color: rgba(12, 12, 12, 0.5);
     display:flex;
@@ -100,6 +105,12 @@ width:100%;
 margin-bottom:1rem;
 margin-top:1rem;
 }
+.AboutContentItem{
+    margin: auto;
+  width: 60%;
+  padding: 10px;
+  font-size:155%;
+}
 .AboutMePhoto{
     grid-area: 1/1/1/1;
     max-width:100%;
@@ -126,4 +137,14 @@ footer{
     flex-flow:row wrap;
     justify-content: space-evenly;
     
+}
+.footerItem{
+    flex: 1 1 0;
+    width: 0;
+}
+.footerButton{
+    display:inline-block;
+    text-align:center;
+    outline:none;
+    font-size:100%;
 }
