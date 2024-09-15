@@ -18,7 +18,7 @@ html::-webkit-scrollbar{
 }
 body {
     margin: 0;
-    height: 100%;
+    height: auto;
     background-color:rgb(48, 46, 46);
     -webkit-background-size: cover;
     -moz-background-size: cover;
