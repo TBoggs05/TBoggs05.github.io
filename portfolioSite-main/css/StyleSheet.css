@@ -40,52 +40,7 @@ body {
         transform:scale(1,1);
     }
 }    
-/* For small devices (phones, less than 600px) */
-@media only screen and (max-width: 600px) {
-    .gridwrapper {
-        flex-direction: column; /* Stack the elements vertically on small screens */
-    }
-
-    .mainGridDiv {
-        grid-template-columns: 1fr; /* One column layout */
-    }
-
-    h1 {
-        font-size: 150%;
-    }
-
-    p, h2, h3, h4 {
-        font-size: 100%; /* Adjust font sizes for readability */
-    }
-
-    button {
-        font-size: 90%; /* Make buttons more compact */
-    }
-
-    .projectIcon {
-        width: 80%; /* Adjust image size */
-    }
-
-    .ContentDiv {
-        grid-template-columns: 1fr; /* Single column for projects */
-        padding: 1rem;
-    }
-
-    .footerFlex {
-        flex-direction: column;
-    }
-}
-
-/* For medium devices (tablets, 600px to 768px) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-    .mainGridDiv {
-        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-    }
-
-    .ContentDiv {
-        grid-template-columns: 1fr 1fr;
-    }
-}             
+        
 p{
     font-size:125%;
 }
