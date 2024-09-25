@@ -3,108 +3,105 @@
 <head>
     <title>Trace's Portfolio!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel = "stylesheet" href = "../css/StyleSheet.css">
+    <link rel="stylesheet" href="../css/StyleSheet.css">
     <!--font import from google!-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class = "gridwrapper">
-      <div class="mainGridDiv">
-          <div class = "nameItem">
-              <button class = "nameButton gridButton"><h2 class = "gridText">TRACE BOGGS</h2></button>
-          </div>
-            <div class = projItem>
-                <button class = "projectsButton gridButton"><h3 class = "gridText">PROJECTS</h3></button>
+    <div class="gridwrapper">
+        <div class="mainGridDiv">
+            <div class="nameItem">
+                <button class="nameButton gridButton"><h2 class="gridText">TRACE BOGGS</h2></button>
             </div>
-            <div class = expItem>
-              <button class = "gridButton experienceButton"><h3 class = "gridText">EXPERIENCE</h3></button>
+            <div class="projItem">
+                <button class="projectsButton gridButton"><h3 class="gridText">PROJECTS</h3></button>
             </div>
-          <div class = eduItem>
-              <button class = "educationButton gridButton"><h3 class = "gridText">EDUCATION</h3></button>
-          </div>
-          <div class = resumeItem>
-              <button class = "resumeButton gridButton"><h3 class = "gridText">RESUME</h3></button>
-          </div>
-      </div>
+            <div class="expItem">
+                <button class="gridButton experienceButton"><h3 class="gridText">EXPERIENCE</h3></button>
+            </div>
+            <div class="eduItem">
+                <button class="educationButton gridButton"><h3 class="gridText">EDUCATION</h3></button>
+            </div>
+            <div class="resumeItem">
+                <button class="resumeButton gridButton"><h3 class="gridText">RESUME</h3></button>
+            </div>
+        </div>
     </div>
 
-
-<h1>PROJECTS</h1>
-<div class = "ContentDiv">
-    <div>
-        <h2 class = "projectTitle">LIGHTSTOP</h2>
-        <h4 class = "projectTitle">MOBILE GAME</h4>
-        <div class = "projectLink"><a href = "https://sites.google.com/view/lightstop/home" target = "_blank">Available for download on IOS and android</a></div>
+    <h1>PROJECTS</h1>
+    <div class="ContentDiv">
+        <div>
+            <h2 class="projectTitle">LIGHTSTOP</h2>
+            <h4 class="projectTitle">MOBILE GAME</h4>
+            <div class="projectLink"><a href="https://sites.google.com/view/lightstop/home" target="_blank">Available for download on IOS and Android</a></div>
+        </div>
+        <div class="projectIcon"><img class="projectIcon" src="../images/lightstop.png" alt="icon"></div>
+        <div style="grid-area: 1 / 2 / 1 / 5;">
+            <p>Lightstop is a mobile game built using Unity and C# over the course of a couple weeks.</p>
+        </div>
+        <div style="grid-area: 2 / 2 / 3 / 5;">
+            <p>Notable Features:</p>
+            <p>- Unity Ads API</p>
+            <p>- Global leaderboard</p>
+            <p>- Functional shop with cosmetics and upgrades</p>
+            <p>- Polar coordinates for calculating lines at runtime</p>
+            <p>- Iterative merge sort for reorganizing cells.</p>
+            <p>- Use of Unity Shaders for lighting.</p>
+        </div>
     </div>
-    <div class = "projectIcon"><img class = "projectIcon" src = "../images/lightstop.png" alt = "icon"></div>
-    <div style = "grid-area: 1/2/1/5;">
-          <p>Lightstop is a mobile game built using Unity and C# over the course of a couple weeks.</p>
+
+    <br>
+
+    <div class="ContentDiv">
+        <div>
+            <h2>ARDUINO CALCULATOR</h2>
+            <h4 class="projectTitle">PROJECT</h4>
+            <div style="grid-area:2/1/2/1">
+                <a href="https://github.com/TBoggs05/Arduino-Simple-Calculator" target="_blank">View on Github</a>
+            </div>
+        </div>
+        <div class="projectIcon"><img class="projectIcon" src="../images/arduino-logo-1.png" alt="icon"></div>
+        <div style="grid-area: 1 / 2 / 1 / 5;">
+            <p>A classic calculator project made physical by building my own personal calculator using Arduino</p>
+        </div>
+        <div style="grid-area: 2 / 2 / 3 / 5;">
+            <p>Uses an Arduino UNO, LCD, 4x4 keypad, breadboard and wires.</p>
+            <p>Created a tutorial on Github, serves as a good intro to embedded systems.</p>
+            <p>Source Code involves infix to postfix conversion and stacks.</p>
+        </div>
     </div>
-    <div style = "grid-area: 2/2/3/5;">
-          <p>Notable Features:</p>
-          <p>-Unity Ads API</p>
-          <p>-global leadearboard</p>
-          <p>-Functional Shop with Cosmetics and Upgrades</p>
-          <p>-polar coordinates for calculating lines at runtime</p>
-          <p>-iterative mergesort for reorganizing cells.</p>
-          <p>-Use of Unity Shaders for lighting.</p>
-    
-</div>
 
-<br>
+    <br>
 
-<div class = "ContentDiv">
-  <div>
-        <h2>ARDUINO CALCULATOR</h2>
-        <h4 class = "projectTitle">PROJECT</h4>
-        <div style = "grid-area:2/1/2/1"><a href = "https://github.com/TBoggs05/Arduino-Simple-Calculator" target = "_blank">View on Github</a></div>
-  </div>
-    <div class = "projectIcon"><img class = "projectIcon" src = "../images/arduino-logo-1.png" alt = "icon"></div>
-        <!--<div class = "projectIcon"><img class = "projectIcon" src = "../images/tailsoftwo.png" alt = "icon"></div>-->
-        <div style = "grid-area: 1/2/1/5;">
-          <p>A classic calculator project made physical by building my own personal calculator using Arduino</p>
+    <div class="ContentDiv">
+        <div>
+            <h2>TAILS OF TWO</h2>
+            <h4 class="projectTitle">2-DAY GAME JAM</h4>
+            <div style="grid-area: 2 / 1 / 2 / 1">
+                <a href="https://tpoggs.itch.io/tails-of-two-escape" target="_blank">Available to play on Itch</a>
+            </div>
+        </div>
+        <div class="projectIcon"><img class="projectIcon" src="../images/tailsoftwo.png" alt="icon"></div>
+        <div style="grid-area: 1 / 2 / 1 / 5;">
+            <p>Tails of Two is my submission to the "Jame-Gam Mini" Game Jam. I led a team of 3 inexperienced friends to make this in 2 days.</p>
+        </div>
+        <div style="grid-area: 2 / 2 / 3 / 5;">
+            <p>While the game is limited in scope, seeing as it was developed in two days, it demonstrates my ability to work in a time crunch, adapt to situational constraints, and lead/teach team members.</p>
+        </div>
     </div>
-    <div style = "grid-area: 2/2/3/5;">
-          <p>Uses an Arduino UNO, LCD, 4x4 keypad, breadboard and wires.</p>
-          <p>Created a tutorial on github, serves as a good intro to embedded systems.</p>
-          <p>Source Code involves infix to postfix conversion and stacks.</p>
-    </div>
-    
-</div>
 
-<br>
-
-<div class = "ContentDiv">
-  <div>
-        <h2>TAILS OF TWO</h2>
-        <h4 class = "projectTitle">2-DAY GAME JAM</h4>
-        <div style = "grid-area:2/1/2/1"><a href = "https://tpoggs.itch.io/tails-of-two-escape" target = "_blank">Available to play on Itch</a></div>
-  </div>
-        <div class = "projectIcon"><img class = "projectIcon" src = "../images/tailsoftwo.png" alt = "icon"></div>
-        <div style = "grid-area: 1/2/1/5;">
-          <p>Tails of Two is my submission to the "Jame-Gam Mini" Game Jam. </p><br><p>I led a team of 3 inexperienced friends to make this in 2 days.</p>
-    </div>
-    <div style = "grid-area: 2/2/3/5;">
-          <p>While the game is very limited in scope, seeing as it was developed in two days, it does demonstrate my ability to work in a time crunch, adapt to situational constraints, and lead/teach team members.</p>
-    </div>
-    
-</div>
-
-
-
+    <footer>
+        <h1>LINKS</h1>
+        <div class="footerFlex">
+            <div class="footerItem"><a href="https://www.linkedin.com/in/trace-boggs-5405412a7/" target="_blank"><button class="footerButton"><p>LinkedIn</p></button></a></div>
+            <div class="footerItem"><a href="https://github.com/TBoggs05" target="_blank"><button class="footerButton"><p>Github</p></button></a></div>
+            <div class="footerItem"><a href="mailto:trace.boggs05@gmail.com"><button class="footerButton"><p>Email</p></button></a></div>
+            <div class="footerItem"><a href="https://play.google.com/store/apps/dev?id=5072496246951453851" target="_blank"><button class="footerButton"><p>GooglePlay</p></button></a></div>
+            <div class="footerItem"><a href="https://leetcode.com/u/TPOGGS/" target="_blank"><button class="footerButton"><p>LeetCode</p></button></a></div>
+            <div class="footerItem"><a href="https://profile.indeed.com/p/traceb-4wd0l77" target="_blank"><button class="footerButton"><p>Indeed</p></button></a></div>
+            <div class="footerItem"><a href="https://itch.io/profile/tpoggs" target="_blank"><button class="footerButton"><p>Itch</p></button></a></div>
+        </div>
+    </footer>
+    <script src="../javascript/gridButtons.js"></script>
 </body>
-<footer>
-  <h1>LINKS</h1>
-  <div class = "footerFlex">
-    <div class = "footerItem"><a href="https://www.linkedin.com/in/trace-boggs-5405412a7/" target ="_blank"><button class = "footerButton"><p>LinkedIn</p></button></a></div>
-    <div class = "footerItem"><a href="https://github.com/TBoggs05" target ="_blank"><button class = "footerButton"><p>Github</p></button></a></div>
-    <div class = "footerItem"><a href="mailto:trace.boggs05@gmail.com"><button class = "footerButton"><p>Email</p></button></a></div>
-    <div class = "footerItem"><a href ="https://play.google.com/store/apps/dev?id=5072496246951453851" target = "_blank"><button class = "footerButton"><p>GooglePlay</p></button></a></div>
-    <div class = "footerItem"><a href="https://leetcode.com/u/TPOGGS/" target = "_blank"><button class = "footerButton"><p>LeetCode</p></button></a></div> 
-    <div class = "footerItem"><a href="https://profile.indeed.com/p/traceb-4wd0l77" target = "_blank"><button class = "footerButton"><p>Indeed</p></button></a></div>
-    <div class = "footerItem"><a href="https://itch.io/profile/tpoggs" target = "_blank"><button class = "footerButton"><p>Itch</p></button></a></div>
-  </div>
-</footer>
-  <script src = "../javascript/gridButtons.js"></script>
-
 </html>
