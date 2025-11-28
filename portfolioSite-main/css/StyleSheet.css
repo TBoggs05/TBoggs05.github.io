@@ -1,28 +1,38 @@
-/* Global Reset */
+/*************GLOBAL PROPERTIES****************************************/
+@font-face{
+    font-family: "NotoSans-Thin";
+    src: url('fonts/NotoSans-Thin.woff2') format('woff2');
+    font-display: auto;
+}
 * {
     box-sizing: border-box;
-    font-family: "Playfair Display";
+    font-family: "NotoSans-Thin";
     color: white;
 }
-
 html {
     -ms-overflow-style: none; 
     scrollbar-width: none;
     overscroll-behavior: none;
     height: 100%;
 }
-
 html::-webkit-scrollbar {
     display: none;
 }
-
+/***************BODY TEXT PROPERTIES********************************/
 body {
     margin: 0;
     height: 100vh;
     background-color: #2C2A2F;
     background-size: cover;
 }
-
+.bodyTitle{
+    text-align: center;
+    background-color: rgba(12, 12, 12, 0.67);
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+/***********HEADER PROPERTIES************************/
 header {
     display: flex;
     justify-content: flex-start;
@@ -64,6 +74,8 @@ header {
     color:#F5F5F5;
     flex:1;
 }
+/*********************************************************/
+
 
 /* Fade-in animation */
 @keyframes fadeInAnimation {
@@ -248,4 +260,18 @@ footer {
     .ResumeDiv {
         height: 60rem;
     }
+}
+.selfieDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.selfieImage{
+    opacity: 1;
+    clip-path: circle(250px);
+    animation-name: fadeInAnimation;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
 }
