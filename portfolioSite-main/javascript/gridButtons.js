@@ -19,5 +19,11 @@
            } else if (button.classList.contains("nameButton") && fileName != "mePage.html") {
                location.href = "mePage.html";
            }
+           else if (button.classList.contains("clubsButton") && fileName != "ClubsPage.html") {
+               location.href = "ClubsPage.html";
+           }
+           else if (button.classList.contains("researchButton") && fileName != "ResearchPage.html") {
+               location.href = "ResearchPage.html";
+           }
        };
    });

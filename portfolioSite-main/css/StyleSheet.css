@@ -57,10 +57,12 @@ header {
 .nameText{
     font-size: 24px;
     color:#F5F5F5;
+    flex:1;
 }
 .gridText{
     font-size: 20px;
     color:#F5F5F5;
+    flex:1;
 }
 
 /* Fade-in animation */
