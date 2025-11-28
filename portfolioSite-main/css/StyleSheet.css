@@ -1,169 +1,249 @@
-*{
+/* Global Reset */
+* {
     box-sizing: border-box;
-    font-size: auto;
-    font-family:"Playfair Display";
-    color:white;
+    font-family: "Playfair Display";
+    color: white;
 }
 
-html{
-   -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+html {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
     overscroll-behavior: none;
-    height:100%;
- 
+    height: 100%;
 }
 
-html::-webkit-scrollbar{
-    display:none;
+html::-webkit-scrollbar {
+    display: none;
 }
+
 body {
     margin: 0;
     height: 100vh;
-    background-color:rgb(48, 46, 46);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: #2C2A2F;
     background-size: cover;
 }
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    gap:2rem;
+    top: 0;
+    z-index: 2;
+    align-items: stretch;
+    width: 100vw;
+    background-color: #1F1D23;
+}
+
+.gridButton{
+    display:flex;
+    background-color: rgba(12, 12, 12, 0.67);
+    justify-content: center;
+    z-index: 2;
+    transition: transform 0.45s ease;
+    max-width: 75%;
+    max-height:87%;
+    transform: skewX(-20deg);
+    margin-left:5%;
+}
+
+.gridButton:hover{
+    transform: translateY(10px);
+    background-color: chocolate;
+}
+.nameButton{
+    min-height: 100%;
+}
+.nameText{
+    font-size: 24px;
+    color:#F5F5F5;
+}
+.gridText{
+    font-size: 20px;
+    color:#F5F5F5;
+}
+
+/* Fade-in animation */
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
-        transform:scale(0,0);
+        transform: scale(0);
     }
-
-    50%{
+    50% {
         opacity: 0.7;
-        transform:scale(0.3,1);
+        transform: scale(0.3, 1);
     }
     100% {
         opacity: 1;
-        transform:scale(1,1);
+        transform: scale(1);
     }
-}    
-        
-p{
-    font-size:125%;
 }
-h1{
-    font-size:180%;
+
+/* Typography */
+p {
+    font-size: 1.25rem;
 }
-.gridwrapper{
-    background-color: rgba(12, 12, 12, 0.5);
-    display:flex;
+
+h1 {
+    font-size: 1.8rem;
+}
+
+/* Navigation Wrapper */
+.gridWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    gap:2rem;
+    width: 100%;
+}
+
+/* Main navigation grid */
+.mainGridDiv {
+    display: grid;
+    grid-template-rows: repeat(0, 1fr);
+    grid-template-columns: repeat(6, 2fr);
+    width: 100%;
+}
+
+.gridItem {
+    background-color: rgb(245, 245, 255);
+}
+
+/* Button Styling */
+button {
+    display: flex;
     justify-content: center;
-    position:sticky;
-    top:0;
-    z-index: 2;
-}
-.mainGridDiv{
-    display:inline-grid;  
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows:auto;
-    width:100%;
-    height:100%;
-}
-.gridItem{
-background-color:rgb(245, 245, 255);
-}
-.nameItem{
-grid-column:1 / span 5;
+    align-items: center;
+    width: auto;
+    background: none;
+    outline: none;
+    border: none;
+    box-shadow:
+        0 6px 8px rgba(0, 0, 0, 0.24),
+        0 8px 25px rgba(0, 0, 0, 0.19);
 }
 
-.gridText{
-    
-    display:flex;
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-    text-shadow:10px;
-   
-    
+button:hover {
+    box-shadow:
+        0 12px 16px rgba(0, 0, 0, 0.24),
+        0 17px 50px rgba(0, 0, 0, 0.19);
 }
 
-button{
-    margin-left:auto;
-    margin-right:auto;
-    display:flex;
-    background:none;
-    outline:none;
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
-    width:100%;
-    height:100%;
-    text-align:center;
+/* Content Section */
+.ContentDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    animation: fadeInAnimation 0.7s ease forwards;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 1rem 0;
 }
-    
-button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.ContentDiv{
-display:inline-grid;
-grid-template-columns:repeat(3,1fr);
-animation: fadeInAnimation ease 0.7s;
-animation-iteration-count: 1;
-animation-fill-mode:forwards;
-background-color:rgba(0,0,0,0.3);
-width:100%;
-margin-bottom:1rem;
-margin-top:1rem;
-}
-.AboutContentItem{
+
+.AboutContentItem {
     margin: auto;
-  width: 60%;
-  padding: 10px;
-  font-size:155%;
+    width: 60%;
+    padding: 10px;
+    font-size: 1.55rem;
 }
-.AboutMePhoto{
-    grid-area: 1/1/1/1;
-    max-width:100%;
-    height:auto;
+
+.AboutMePhoto {
+    max-width: 100%;
+    height: auto;
 }
-.ResumeDiv{
-    display:flex;
+
+/* Resume embed wrapper */
+.ResumeDiv {
+    display: flex;
     justify-content: center;
-    height:80rem;
-    width:auto;
-    max-height:100%;
-    max-width:auto;
-    margin-left:auto;
-    margin-right:auto;
+    height: 80rem;
+    width: 100%;
+    margin: auto;
 }
-footer{
-    text-align:center;
-   /* background-color:rgba(245, 245, 220, 0.329);*/
-    margin-top:auto;
+
+/* Footer */
+footer {
+    text-align: center;
     background-color: rgba(12, 12, 12, 0.5);
 }
-.footerFlex{
-    display:flex;
-    flex-flow:row wrap;
+
+.footerFlex {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-    
 }
-.footerItem{
+
+.footerItem {
     flex: 1 1 0;
 }
-.footerButton{
-    display:inline-block;
-    text-align:center;
-    outline:none;
-    font-size:100%;
+
+.footerButton {
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
 }
 
-.projectIcon{
-    grid-area: 2/1/3/1;
-    max-width:100%;
-    width:50%;
-    height:auto;
+/* Project Items */
+.projectIcon,
+.projectTitle,
+.projectLink {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
 }
-.projectTitle{
-    grid-area: 1/1/1/1;
-    max-width:100%;
-    width:50%;
-    height:auto;
+
+/* Fix incorrect grid-area declarations */
+.projectIcon {
+    grid-row: 2;
+    grid-column: 1;
 }
-.projectLink{
-    grid-area: 1/1/1/1;
-    max-width:100%;
-    width:50%;
-    height:auto;
-} 
+
+.projectTitle,
+.projectLink {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+/* ----------------------- */
+/* RESPONSIVE BREAKPOINTS */
+/* ----------------------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .ContentDiv {
+        grid-template-columns: 1fr 1fr;
+    }
+    .AboutContentItem {
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    p {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .mainGridDiv {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nameItem {
+        grid-column: 1 / span 3;
+    }
+    button {
+        padding: 0.8rem 0;
+    }
+    .ContentDiv {
+        grid-template-columns: 1fr;
+    }
+    .AboutContentItem {
+        width: 95%;
+        font-size: 1.3rem;
+    }
+    .ResumeDiv {
+        height: 60rem;
+    }
+}

@@ -16,7 +16,7 @@
                location.href = "ProjectsPage.html";
            } else if (button.classList.contains("resumeButton")&& fileName != "ResumePage.html") {
                location.href = "ResumePage.html";
-           } else if (button.classList.contains("nameButton")&& fileName != "index.html") {
+           } else if (button.classList.contains("nameButton") && fileName != "mePage.html") {
                location.href = "mePage.html";
            }
        };
