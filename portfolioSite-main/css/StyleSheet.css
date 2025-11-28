@@ -32,6 +32,12 @@ body {
     flex:1;
     justify-content: center;
 }
+.contentDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#45424A;
+}
 /***********HEADER PROPERTIES************************/
 header {
     display: flex;
