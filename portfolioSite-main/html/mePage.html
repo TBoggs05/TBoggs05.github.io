@@ -5,45 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel = "stylesheet" href = "../css/StyleSheet.css">
 </head>
-<header>
-      <div class="mainGridDiv">
+<body>
+  <header>
+      <div class="navBarDiv">
          
-            <button class = "nameButton gridButton"><h2 class = "nameText">TRACE BOGGS</h2></button>
+            <button onclick= "location.href='#START'" class = "nameButton navButton"><h2 class = "nameText">TRACE BOGGS</h2></button>
           
-            <button class = "projectsButton gridButton"><h3 class = "gridText">PROJECTS</h3></button>
-           
-            <button class = "experienceButton gridButton"><h3 class = "gridText">EXPERIENCE</h3></button>
-            
-            <button class = "researchButton gridButton"><h3 class = "gridText">RESEARCH</h3></button>
+            <button onclick= "location.href='#EDUCATION'" class = "educationButton navButton"><h3 class = "navText">EDUCATION</h3></button>
+
+            <button onclick= "location.href='#EXPERIENCE'" class = "experienceButton navButton"><h3 class = "navText">EXPERIENCE</h3></button>
+
+            <button onclick= "location.href='#RESEARCH'" class = "researchButton navButton"><h3 class = "navText">RESEARCH</h3></button>
+
+            <button onclick= "location.href='#PROJECTS'" class = "projectsButton navButton"><h3 class = "navText">PROJECTS</h3></button>
           
-            <button class = "educationButton gridButton"><h3 class = "gridText">EDUCATION</h3></button>
-          
-            <button class = "clubsButton gridButton"><h3 class = "gridText">CLUBS</h3></button>
+            <button onclick= "location.href='#CLUBS'" class = "clubsButton navButton"><h3 class = "navText">CLUBS</h3></button>
       </div>
 </header>
-<body>
-<h1 class = "bodyTitle">TRACE BOGGS</h1>
-    <div class = "aboutMeDiv contentDiv">
-      <h2>ABOUT ME</h2>
-      <p>Bonnie Freddie time to get ready midnighta lready time to play hy i heard they hired that new guy and its his first day!</p>
-    </div>
-    <div class = "selfieDiv">
-      <img class = "selfieImage" src="../images/selfie.jpg" width="67%" height="67%">
-    </div>
-</body>
-<!--
-<footer>
-  <h1>LINKS</h1>
-  <div class = "footerFlex">
-    <div class = "footerItem"><a href="https://www.linkedin.com/in/trace-boggs-5405412a7/" target ="_blank"><button class = "footerButton"><p>LinkedIn</p></button></a></div>
-    <div class = "footerItem"><a href="https://github.com/TBoggs05" target ="_blank"><button class = "footerButton"><p>Github</p></button></a></div>
-    <div class = "footerItem"><a href="mailto:trace.boggs05@gmail.com"><button class = "footerButton"><p>Email</p></button></a></div>
-    <div class = "footerItem"><a href ="https://play.google.com/store/apps/dev?id=5072496246951453851" target = "_blank"><button class = "footerButton"><p>GooglePlay</p></button></a></div>
-    <div class = "footerItem"><a href="https://leetcode.com/u/TPOGGS/" target = "_blank"><button class = "footerButton"><p>LeetCode</p></button></a></div>
-    <div class = "footerItem"><a href="https://profile.indeed.com/p/traceb-4wd0l77" target = "_blank"><button class = "footerButton"><p>Indeed</p></button></a></div>
-    <div class = "footerItem"><a href="https://itch.io/profile/tpoggs" target = "_blank"><button class = "footerButton"><p>Itch</p></button></a></div>
+<main class="pageWrapper fade-in">
+  <div class = "colorFadeDiv">
+  <h1 id = "START" class = "centerTitle">HELLO!</h1>
   </div>
-</footer>
--->
-<script src = "../javascript/gridButtons.js"></script>
+  <div class="aboutMePage fade-in">
+    <div class="aboutLeftColumn">
+      <div class = "headshotBlock hoverBlock">
+        <img loading="lazy" alt="HeadShot" src="../images/selfie.jpg" class="profilePhoto">
+      </div>
+        <div class = "aboutMeBlock hoverBlock">
+        <h3>ABOUT ME</h3>
+          <p>I'm Trace Boggs, a Senior Computer Science and Mathematics Student at Cameron University.<br>
+             I enjoy studying algorithms, computer vision, and low-level systems like compilers, computer graphics,
+             Operating Systems.</p>
+            <div class = "bodyTitle">
+              <button class = "aboutButton"><a href="../images/Resume.pdf" class = "titleItem"><h3>LinkedIn</h3></a></button>
+              <button class = "aboutButton"><a href="../images/Resume.pdf" class = "titleItem"><h3>Email</h3></a></button>
+              <button class = "aboutButton"><a href="../images/Resume.pdf" class="titleItem"><h3>Resume</h3></a></button>
+              <button class = "aboutButton"><a href="../images/Resume.pdf" class = "titleItem"><h3>Github</h3></a></button>
+             <button class = "aboutButton"><a href="../images/Resume.pdf" class = "titleItem"><h3>Leetcode</h3></a></button>
+            </div>
+        </div>
+  </div>
+  <div class="aboutRightColumn hoverBlock">
+    <h2>MISSION STATEMENT</h2>
+    <p>
+      No more than 2 pages single spaced. Concise, focused, well written.
+      It should describe succinctly your reasons for applying to the proposed
+      program, your preparation for this field of study, research interests,
+      future career plans, and other aspects of your background and interests
+      which may aid the admissions committee in evaluating your aptitude and
+      motivation for graduate study.
+    </p>
+  </div>
+  </div>
+  <div class = "colorFadeDiv">
+    <h1 id = "EDUCATION" class = "centerTitle">EDUCATION</h1>
+  </div>
+  <div class = "educationPage fade-in">
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+  </div>
+  <div class = "colorFadeDiv">
+    <h1 id = "EXPERIENCE" class = "centerTitle">EXPERIENCE</h1>
+  </div>
+  <div class = "experiencePage fade-in">
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+  </div>
+  <div class = "colorFadeDiv">
+  <h1 id = "RESEARCH" class = "centerTitle">RESEARCH</h1>
+  </div>
+  <div class = "researchPage fade-in">
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+  </div>
+  <div class = "colorFadeDiv">
+  <h1 id = "PROJECTS" class = "centerTitle">PROJECTS</h1>
+  </div>
+  <div class = "projectsPage fade-in">
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+  </div>
+  <div class = "colorFadeDiv">
+  <h1 id = "CLUBS" class = "centerTitle">CLUBS</h1>
+  </div>
+  <div class = "clubsPage fade-in">
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+    <div class="basicColumn hoverBlock">
+      YO
+    </div>
+  </div>
+</main>
+<footer></footer>
+</body>
+<script src = "../javascript/navButtons.js"></script>
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
 </html>
+

@@ -1,4 +1,4 @@
-//queryselectorAll queries document for all attributes w/ passed selector (class gridButton)
+/*//queryselectorAll queries document for all attributes w/ passed selector (class gridButton)
     var buttons = document.querySelectorAll(".gridButton");
   //javascript is weakly typed so our var is actually containing a list of all buttons...
   //we loop thu each button in buttons and for each button in buttons we call a function which we pass that button
@@ -26,4 +26,4 @@
                location.href = "ResearchPage.html";
            }
        };
-   });
+   });*/
