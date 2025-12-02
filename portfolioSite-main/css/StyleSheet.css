@@ -309,7 +309,7 @@ footer {
 
 /* Profile picture styling */
 .profilePhoto {
-    width: 80%;
+    width: 67%;
     height: auto;
     border-radius: 12px;
     object-fit: cover;
