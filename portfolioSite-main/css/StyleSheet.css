@@ -458,3 +458,11 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+.box_text {
+    margin: 3vw;
+}
+
+.box_title {
+    text-align: center;
+}
