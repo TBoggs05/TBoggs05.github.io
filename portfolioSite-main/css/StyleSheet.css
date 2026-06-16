@@ -196,7 +196,7 @@ header{
   font-family: monospace;
   position: relative;
   text-wrap: wrap;
-  text-shadow: 0 0 5px var(--terminal-text), 0 0 10px var(--terminal-text), 0 0 30px var(--terminal-text);
+  text-shadow: 0 0 5px var(--terminal-text);
   z-index: 2; /* Ensure it stays above the rain effect */
     margin: 0 0;
     border-right: 5px solid var(--terminal-text);
@@ -223,7 +223,7 @@ header{
   font-size: 15px;
   font-family: monospace;
   position: relative;
-  text-shadow: 0 0 5px var(--terminal-text), 0 0 10px var(--terminal-text), 0 0 30px var(--terminal-text);
+  text-shadow: 0 0 5px var(--terminal-text);
   z-index: 2; /* Ensure it stays above the rain effect */
     margin: 0 0;
     padding-top:35px;
@@ -260,7 +260,7 @@ header{
   font-size: 15px;
   font-family: monospace;
   position: relative;
-  text-shadow: 0 0 5px var(--terminal-text), 0 0 10px var(--terminal-text), 0 0 30px var(--terminal-text);
+  text-shadow: 0 0 5px var(--terminal-text);
   z-index: 2; /* Ensure it stays above the rain effect */
     margin: 0 0;
     padding-left:20px;
