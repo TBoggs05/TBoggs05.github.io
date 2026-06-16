@@ -2,137 +2,248 @@
 <html>
 <head>
     <title>Trace's Portfolio!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = "../css/StyleSheet.css">
 </head>
-<body>
   <header>
-      <div class="navBarDiv">
-         
-            <button onclick= "location.href='#START'" class = "nameButton navButton hoverBlock"><h2 class = "nameText">TRACE BOGGS</h2></button>
-          
-            <button onclick= "location.href='#EDUCATION'" class = "educationButton navButton hoverBlock"><h3 class = "navText">EDUCATION</h3></button>
-
-            <button onclick= "location.href='#EXPERIENCE'" class = "experienceButton navButton hoverBlock"><h3 class = "navText">EXPERIENCE</h3></button>
-
-            <button onclick= "location.href='#RESEARCH'" class = "researchButton navButton hoverBlock"><h3 class = "navText">RESEARCH</h3></button>
-
-            <button onclick= "location.href='#PROJECTS'" class = "projectsButton navButton hoverBlock"><h3 class = "navText">PROJECTS</h3></button>
-          
-            <button onclick= "location.href='#CLUBS'" class = "clubsButton navButton hoverBlock"><h3 class = "navText">CLUBS</h3></button>
-      </div>
-</header>
-<main class="pageWrapper fade-in">
-  <div class = "colorFadeDiv">
-  <h1 id = "START" class = "centerTitle">HELLO, I'M TRACE BOGGS</h1>
-  </div>
-  <div class="aboutMePage fade-in">
-    <div class="aboutLeftColumn">
-      <div class = "headshotBlock ">
-        <img loading="lazy" alt="HeadShot" src="../images/suit_picture.jpg" class="profilePhoto">
-      </div>
-        <div class = "aboutMeBlock ">
-        <h3 class = "box_title">ABOUT ME</h3>
-          <p class = "box_text">I'm Trace Boggs, a Senior Computer Science and Mathematics Student at Cameron University.
-             I enjoy studying algorithms, computer vision, and low-level systems like compilers, computer graphics,
-             Operating Systems.</p>
-            <div class = "bodyTitle">
-              <button class = "aboutButton"><a href="https://www.linkedin.com/in/trace-boggs-5405412a7/" class = "titleItem" target="_blank"><h3>LinkedIn</h3></a></button>
-              <button class = "aboutButton"><a href="mailto:trace.boggs05@gmail.com" class = "titleItem"><h3>Email</h3></a></button>
-              <button class = "aboutButton"><a href="../images/Trace_Boggs_Resume.pdf" class="titleItem" target="_blank"><h3>Resume</h3></a></button>
-              <button class = "aboutButton"><a href="https://github.com/TBoggs05" class = "titleItem" target="_blank"><h3>Github</h3></a></button>
-             <button class = "aboutButton"><a href="https://leetcode.com/u/TPOGGS/" class = "titleItem" target="_blank"><h3>Leetcode</h3></a></button>
-            </div>
+    <div class="flex">
+      <div class = "left-column">
+        <div class="start-banner fade-in" id="START">
+          <h1 class="matrix-text-borderless typewriter-animation section-header">>I'm Trace Boggs</h1>
+          <h3 class="matrix-text-borderless typewriter-animation-2 section-header">>Feel free to explore my portfolio!</h3>
+          <p class="prompt matrix-text-borderless section-header">trace@portfolio:~$ <span class="cursor">_</span></p>
         </div>
-  </div>
-  <div class="aboutRightColumn ">
-    <h2 class = 'box_title'>MISSION STATEMENT</h2>
-    <p class = 'box_text'>
-      I am drawn to problems in computer vision and deep learning, systems programming, and algorithms. 
-      I’ve developed a strong foundation in systems programming from my Operating Systems and Network Programming courses. 
-      Additionally, my background in both mathematics and computer science prepares me well to explore bleeding edge algorithmic questions or deep learning paradigms. 
-    </p>
-    <p class = 'box_text'>
-      My overarching goal is to contribute research that improves our theoretical and practical understanding of modern deep learning and computer vision systems by designing models that are more robust, interpretable, and computationally efficient. 
-      Stanford’s environment of interdisciplinary collaboration, its emphasis on rigorous and impactful research, and its unparalleled community of scholars make it the place where I hope to pursue these questions and grow as a researcher. 
-      Thank you for your consideration, and I look forward to the possibility of contributing to Stanford’s ongoing efforts to push the boundaries of what intelligent systems can learn and achieve.
-    </p>
-  </div>
-  </div>
-  <div class = "1colorFadeDiv">
-    <h1 id = "EDUCATION" class = "centerTitle">EDUCATION</h1>
-  </div>
-  <div class = "educationPage fade-in">
-    <div class="basicColumn ">
-      <h1 class="box_title">College</h1>
-    <div class = "ContentItem"><p>-Attending Cameron University. Dual Major in CS and Math</p><br><p>-4.0 GPA + Presidents Honor Roll</p><br><p></p><br></div>
-      <h3 style = "grid-area:2/1/2/1">Relevant CourseWork</h3>
-        <div style = "grid-area:2/2/2/4"><p>-Computer Science I and II | Data Structures | Algorithm Analysis | Network Programming | Operating Systems | Computer Organization/Architecture | Web Tech | Intro to Networking</p><br><p>-Calculus III | Differential Equations</p></div>
+        <div class = "link-set fade-in">
+            <a href="../images/Trace_Boggs_Resume.pdf" class="matrix-text-link col-1-5">email.url</a>
+            <a href="../images/Trace_Boggs_Resume.pdf" class="matrix-text-link col-1-5">linkedin.url</a>
+            <a href="../images/Trace_Boggs_Resume.pdf" class="matrix-text-link col-1-5">github.url</a>
+            <a href="../images/Trace_Boggs_Resume.pdf" class="matrix-text-link col-1-5">resume.pdf</a>
+        </div>
+      </div>
+      <div class="start-portrait fade-in">
+        <div class = "educ-box">
+          <div class="grid">
+          <img src = "../images/grad_picture.jpg" alt="Photo of Trace" class="start-portrait col-2-3">
+            <h2 class = "matrix-text-borderless">About Me:</h2>
+            <ul class = "col-1-3 matrix-text-small-list">
+              <li>I'm a passionate engineer and developer who loves working with low-level systems and algorithms.</li>  
+              <li>I'm always looking for new learning experiences and opportunites to grow my skillset.</li> 
+              <li>Through my projects and previous experience, I have already established myself as a competent developer, researcher, and teacher.</li> 
+              <li>Now, I look to become and expert in my field, contribute meaningfully to my field, and create some really cool projects!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </header>
+   
+    <div class = "navbar fade-in">
+                <button onclick= "location.href='#START'" class ="navButton"><h2 class = "nameText">>TRACE BOGGS<</h2></button>
+              
+                <button onclick= "location.href='#EDUCATION'" class ="navButton"><h3 class = "navText">>EDUCATION<</h3></button>
+
+                <button onclick= "location.href='#EXPERIENCE'" class ="navButton"><h3 class = "navText">>EXPERIENCE<</h3></button>
+
+                <button onclick= "location.href='#RESEARCH'" class ="navButton"><h3 class = "navText">>RESEARCH<</h3></button>
+
+                <button onclick= "location.href='#PROJECTS'" class ="navButton"><h3 class = "navText">>PROJECTS<</h3></button>
+              
+                <button onclick= "location.href='#SKILLS'" class ="navButton"><h3 class = "navText">>SKILLS<</h3></button>
     </div>
-    <div class="basicColumn ">
-      YO
+
+<main class = "fade-in">  
+  <h1 id="EDUCATION" class="matrix-text-borderless section-header">>MY EDUCATION<span class="cursor">_</span></h1>
+  <div class = "grid">
+      <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">B.A. in Mathematics (G. 2026)</p>
+          <p class = "matrix-text-small">-Also earned history minor</p>
+          <p class = "matrix-text-small">-Graduated 2026, with 4.0GPA / "Summa Cum Laude" Honors</p>
+          <p class = "matrix-text-small box-subheader">Coursework included:</p>
+          <ul class = "matrix-text-small-list">
+            <li>Differential, Integral, and Vector Calculus,</li>
+            <li>Diff eq,</li>
+            <li>MATLAB Programming,</li>
+            <li>Mathematical Stats(Probability Theory),</li> 
+            <li>Foundations of Math,</li> 
+            <li>Discrete Mathematical Structures,</li> 
+            <li>Linear Algebra,</li> 
+            <li>Abstract Algebra,</li> 
+            <li>Real Analalysis,</li>
+            <li>Research Capstone</li></ul>
+      </div>
+      <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">B.S. in Computer Science (G. 2026)</p>
+          <p class = "matrix-text-small">-Graduated 2026, with 4.0GPA / "Summa Cum Laude" Honors</p>
+          <p class = "matrix-text-small box-subheader">Coursework included:</p>
+          <ul class = "matrix-text-small-list">
+            <li>Object-Oriented Programming (CS I and II),</li>
+            <li>Data Structures,</li>
+            <li>Discrete Math Structures,</li>
+            <li>Computer Organization and Architecture,</li>
+            <li>Algorithm Analysis,</li> 
+            <li>Operating Systems,</li> 
+            <li>Network Programming,</li> 
+            <li>Web Development,</li> 
+            <li>Artificial Intelligence,</li> 
+            <li>Compilers,</li>
+            <li>Database Design and Management,</li>
+            <li>Software Engineering,</li>
+            <li>Info Assurance and Security,</li>
+            <li>ML Capstone Project</li>
+            </ul>
+      </div>
+      <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">M.S. in Computer Science (2026-2028)</p>
+          <p class = "matrix-text-small">-Begun Fall 2026 | Projected Grad 2028</p>
+          <p class = "matrix-text-small">-Taking Algorithm Analysis, Intelligent Robotics, and Perspectives of Graduate Computing</p>
+      </div>
+  </div>
+  <h1 id="EXPERIENCE" class = "matrix-text-borderless section-header">>MY EXPERIENCE<span class="cursor">_</span></h1>
+  <div class = "grid">
+      <div class="col-1-2 educ-box" >
+        <p class = "matrix-text-small box-header">Mathematics Tutor</p>
+          <p class = "matrix-text-small box-subheader">Cameron University, Lawton, OK. 2024-2026</p>
+          <ul class = "matrix-text-small-list">
+            <li>Helped students structure custom study plans and prepare schedules,</li>
+            <li>Guided students through problem sets, helping them solve their own problems,</li>
+            <li>Communicated effectively with students, helping them understand material and break down complex problems,</li>
+            <li>Reinforced fundamental concepts through repeated teachings</li>
+            </ul>
+      </div>
+      <div class="col-1-2 educ-box" >
+        <p class = "matrix-text-small box-header">Software Engineering Intern</p>
+          <p class = "matrix-text-small box-subheader">Brunswick-Navico Group, Tulsa, OK May-August 2025</p>
+          <ul class = "matrix-text-small-list">
+            <li>Built a testing-suite python app that connected via BLE to an embedded-systems product.</li>
+            <li>Wrote custom automated tests which could be run automatically using the app, running diagnostics, validating configuration, verifying firmware responses, and ensure setting updates were processed via remote and app BLE instructions.</li>
+            <li>Progress bars, logging, and real-time updates were included to support QA and debugging.</li>
+            <li>The tool would bring regression testing time down by over 95% during development, significantly increasing engineer productivity.</li>
+            </ul>
+      </div>
+  </div>
+  <h1 id="RESEARCH" class = "matrix-text-borderless section-header">>MY RESEARCH<span class="cursor">_</span></h1>
+  <div class = "grid">
+      <div class="col-1-2 educ-box" >
+        <p class = "matrix-text-small box-header">"An Investigation of Real-Time Emotion Recognition Using MobileNetV2"</p>
+          <p class = "matrix-text-small box-subheader">To be published July 2026 by Springer Nature</p>
+          <ul class = "matrix-text-small-list">
+            <li>Built real-time emotion detection pipeline using MobileNetV2 and openCV</li>
+            <li>Investigated the gap between real-time and static evaluation metrics on the pipeline</li>
+            <li>Introduced temporal smoothing and ad-hoc tempurature scaling as post-training solutions to close the gap</li>
+            </ul>
+      </div>
+      <div class="col-1-2 educ-box" >
+        <p class = "matrix-text-small box-header">"Iterative Schemes for Nonlinear Equations with Applications in Applied Sciences"</p>
+          <p class = "matrix-text-small box-subheader">Awaiting Acceptance in the Mathematical Methods in the Applied Sciences Journal</p>
+          <ul class = "matrix-text-small-list">
+            <li>Worked on Newton-Like iterative methods in my Mathematics Capstone course under my professor, Dr. Argyros</li>
+            <li>Helped with figures, proofs, problem solving, and paper iterations</li>
+            <li>I learned a lot about the basics of iterative methods, numerical analysis, and some functional analysis</li>
+            <li>Dr. Argyros was kind enough to cite me as a co-author on the above paper due to my contribution in his research :)</li>
+            </ul>
+      </div>
+  </div>
+  <h1 id="PROJECTS" class = "matrix-text-borderless section-header">>MY PROJECTS<span class="cursor">_</span></h1>
+  <div class = "grid">
+    <div class = "projects-row-1">
+        <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">"LightStop" Mobile Game</p>
+  
+      </div>
+      <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">"Tails of Two" 2-Day Game-Jam Submission</p>
+
+      </div>
+      <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">Arduino Calculator</p>
+
+      </div>
+    </div>
+    <div class = "projects-row-2">
+        <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">Custom Compiler</p>
+         
+      </div>
+      <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">Eulers Method ODE Calculator Webapp</p>
+
+      </div>
+      <div class="col-1-3 educ-box" >
+        <p class = "matrix-text-small box-header">Emotion Recognition Detector</p>
+          
+      </div>
     </div>
   </div>
-  <div class = "1colorFadeDiv">
-    <h1 id = "EXPERIENCE" class = "centerTitle">EXPERIENCE</h1>
-  </div>
-  <div class = "experiencePage fade-in">
-    <div class="basicColumn ">
-      YO
-    </div>
-    <div class="basicColumn ">
-      YO
-    </div>
-  </div>
-  <div class = "1colorFadeDiv">
-  <h1 id = "RESEARCH" class = "centerTitle">RESEARCH</h1>
-  </div>
-  <div class = "researchPage fade-in">
-    <div class="basicColumn ">
-      YO
-    </div>
-    <div class="basicColumn ">
-      YO
-    </div>
-  </div>
-  <div class = "1colorFadeDiv">
-  <h1 id = "PROJECTS" class = "centerTitle">PROJECTS</h1>
-  </div>
-  <div class = "projectsPage fade-in">
-    <div class="basicColumn ">
-      YO
-    </div>
-    <div class="basicColumn ">
-      YO
-    </div>
-  </div>
-  <div class = "1colorFadeDiv">
-  <h1 id = "CLUBS" class = "centerTitle">CLUBS</h1>
-  </div>
-  <div class = "clubsPage fade-in">
-    <div class="basicColumn ">
-      YO
-    </div>
-    <div class="basicColumn ">
-      YO
-    </div>
+  <h1 id="SKILLS" class = "matrix-text-borderless section-header">>MY SKILLS<span class="cursor">_</span></h1>
+  <div class = "grid">
+      <div class="col-1-4 educ-box" >
+        <p class = "matrix-text-small box-header">Languages:</p>
+          <p class = "matrix-text-small">C, C++, Python, C#, Java, JavaScript, SQL, LaTeX</p>
+      </div>
+      <div class="col-1-4 educ-box" >
+        <p class = "matrix-text-small box-header">Frameworks, Engines, Libraries, and Systems:</p>
+          <p class = "matrix-text-small">Flutter, Unity, Node.js, Tensorflow, MATLAB, Arduino/Embedded Systems </p>
+      </div>
+      <div class="col-1-4 educ-box" >
+        <p class = "matrix-text-small box-header">Tools/Cloud:</p>
+          <p class = "matrix-text-small">Git/Github, Jira, PostgreSQL, AWS, Docker</p>
+      </div>
+      <div class="col-1-4 educ-box" >
+        <p class = "matrix-text-small box-header">Soft Skills:</p>
+          <p class = "matrix-text-small">Leadership, Collaboration, Adaptability, Problem-Solving, Logical Thinking, and Teaching</p>
+      </div>
   </div>
 </main>
-<footer></footer>
-</body>
-<script src = "../javascript/navButtons.js"></script>
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-});
 
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+<!-- Section 3: The element disappears here -->
+<footer class="site-footer">
+  <div class = "grid">
+    <button class = "term_button col-1-5 matrix-text-small-footer">EMAIL</button><button class = "matrix-text-small-footer term_button  col-1-5">LINKEDIN</button><button class = "term_button matrix-text-small-footer col-1-5">GITHUB</button><button class = "term_button matrix-text-small-footer col-1-5">LEETCODE</button><button class = "matrix-text-small-footer term_button  col-1-5">RESUME</button>
+  </div>
+</footer>
+
+  
+<script>
+  // Select the target element
+  const floatingElement = document.querySelector('.navbar');
+  var isHovering = false;
+  let isScrollingTimer;
+  floatingElement.addEventListener('mouseenter', () => {
+    console.log('Mouse entered the element.');
+    isHovering = true;
+  });
+  floatingElement.addEventListener('mouseleave', () => {
+    console.log('Mouse left the element.');
+    isHovering = false;
+  });
+  window.addEventListener('scroll', () => {
+    // Clear the timer on every scroll movement
+    floatingElement.classList.remove('end-scrolling');
+    clearTimeout(isScrollingTimer);
+
+    // Instantly reveal the element while scrolling
+    floatingElement.classList.add('is-scrolling');
+
+    // Set a timer to hide the element after scrolling stops
+    isScrollingTimer = setTimeout(() => {
+      if(!isHovering){
+        floatingElement.classList.remove('is-scrolling');
+        floatingElement.classList.add('end-scrolling');
+      }
+    }, 1500); // 1500 milliseconds = 1.5 seconds of inactivity
+  });
 </script>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
 </html>
 
