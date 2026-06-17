@@ -308,6 +308,21 @@ ul li::before {
     font-size: 2rem;
     text-align:center;
 }
+.matrix-text-link-small {
+  color: var(--terminal-text);
+  font-size: 12px;
+  font-family: monospace;
+  position: relative;
+  text-shadow: 0 0 5px var(--terminal-text);
+  z-index: 2; /* Ensure it stays above the rain effect */
+    margin: 0 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    padding-top:55px;
+    margin-top:25px;
+    text-decoration: none;
+    text-align:center;
+}
 .matrix-text-link:hover {
     color: #fff;
     text-shadow: 0 0 8px #39ff14;
@@ -379,6 +394,10 @@ ul li::before {
   height: auto;
   background: #333;
   clear:both;
+  display:flex;
+  justify-content: space-around; /* Spaces the links evenly */
+  align-items: center;
+  
 }
 .footer-text{
     color: whitesmoke;
