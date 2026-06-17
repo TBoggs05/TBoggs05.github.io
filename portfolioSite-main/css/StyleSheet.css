@@ -208,6 +208,8 @@ header {
     overflow: hidden;
     padding-top: 55px;
     margin-top: 25px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 .matrix-text-small {
     color: var(--terminal-text);
@@ -245,6 +247,7 @@ header {
 .section-header {
     font-size: 36px;
     margin-left: 5px;
+    margin-right:5px;
 }
 .matrix-text-small-list {
     color: var(--terminal-text);
